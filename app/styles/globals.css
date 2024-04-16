@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-bg {
+    background-image: url("/header-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-clip: padding-box;
+}
+
+
+.width-animation {
+    animation: widthExpand 3s infinite alternate;
+}
+
+.product-card-animation {
+    animation: shadowAnimate 3s infinite alternate;
+}
+
+@keyframes widthExpand {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+@keyframes shadowAnimate {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+  }
